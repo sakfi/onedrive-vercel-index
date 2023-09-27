@@ -38,7 +38,7 @@ module.exports = {
   // [OPTIONAL] The footer component of your website. You can write HTML here, but you need to escape double
   // quotes - changing " to \". You can write anything here, and if you like badges, generate some with https://shields.io
   footer:
-    '<head><meta name="viewport" content="width=device-width"><title>I N D E X B D - ইনডেক্স বিডি</title><meta name="title" content="I N D E X B D - ইনডেক্স বিডি"><meta name="description" content="ইনডেক্স বিডি- বিনোদন হোক ঝামেলাহীন"><meta name="keywords" content="search, searchengine, filessearch, filessearchengine, BDH"><meta name="robots" content="noindex, nofollow"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="language" content="English"><meta name="author" content="INDEXBD"><meta property="og:title" content="I N D E X B D - ইনডেক্স বিডি"/><meta property="og:type" content="search engine"/><meta property="og:url" content="https://indexbd.xyz"/><meta property="og:image" content="https://i.imgur.com/58EPYPB.png"/><link rel="icon" href="ইনডেক্স বিডি- Index BD"></head><body><center><b>ইনডেক্স বিডি"তে আপনাকে স্বাগতম</b><br><a href="https://indexbd.xyz"><img src="https://cdn.jsdelivr.net/gh/noob-af-bd/IndexBD@2.1.7alx2/assets/indexbd.svg" alt="I N D E X B D" border="0" height="50px" width="50%" style="margin-top: 0px;"></a><br><b>"বিনোদন হোক ঝামেলাহীন"</b><br><br> Made with ❤ by <a href="https://indexbd.xyz" target="_blank" rel="noopener noreferrer"> I N D E X B D</a>.<br><p font-size:10px">All Content is Indexed from Various Sites around the globe, proxied using Cloudflare Technology and then Served to authorized users only. The data is not stored on Indexbd.xyz domain or its servers, the website redirects users to third party URLs at the end of each page. This is just an Index, much like how Google and Search Engine Works.</p>',
+    '<head><meta name="viewport" content="width=device-width"><title>I N D E X B D - ইনডেক্স বিডি</title><meta name="title" content="I N D E X B D - ইনডেক্স বিডি"><meta name="description" content="ইনডেক্স বিডি- বিনোদন হোক ঝামেলাহীন"><meta name="keywords" content="search, searchengine, filessearch, filessearchengine, BDH"><meta name="robots" content="noindex, nofollow"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="language" content="English"><meta name="author" content="INDEXBD"><meta property="og:title" content="I N D E X B D - ইনডেক্স বিডি"/><meta property="og:type" content="search engine"/><meta property="og:url" content="https://indexbd.xyz"/><meta property="og:image" content="https://i.imgur.com/58EPYPB.png"/><link rel="icon" href="ইনডেক্স বিডি- Index BD"></head><body><center><b>ইনডেক্স বিডি"তে আপনাকে স্বাগতম</b><br><a href="https://indexbd.xyz"><img src="https://cdn.jsdelivr.net/gh/noob-af-bd/IndexBD@2.1.7alx2/assets/indexbd.svg" alt="I N D E X B D" border="0" height="50px" width="50%" style="margin-top: 0px;"></a><br><b>"বিনোদন হোক ঝামেলাহীন"</b><br><br> Made with ❤ by <a href="https://indexbd.xyz" target="_blank" rel="noopener noreferrer"> I N D E X B D</a>.<br><p font-size:8px">All Content is Indexed from Various Sites around the globe, proxied using Cloudflare Technology and "INDEXBD" doesn’t rip/pirate anything. Copyright owners/Representatives contact us if you think any of the "INDEXBD" files violate intellectual property rights . This is just an Index, much like how Google and Search Engine Works.</p>',
 
   // [OPTIONAL] This is where you specify the folders that are password protected. It is an array of paths pointing to all
   // the directories in which you have .password set. Check the documentation for details.
@@ -54,6 +54,10 @@ module.exports = {
     {
       name: 'INDEXBD',
       link: 'https://m.me/indexbd',
+    },
+    {
+      name: 'Donate',
+      link: 'https://donate.indexbd.xyz',
     },
   ],
 
