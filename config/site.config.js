@@ -52,11 +52,11 @@ module.exports = {
   // you provide. See the documentation for details.
   links: [
     {
-      name: 'INDEXBD',
+      name: 'messenger',
       link: 'https://m.me/indexbd',
     },
     {
-      name: 'Donate',
+      name: 'telegram',
       link: 'https://donate.indexbd.xyz',
     },
   ],
