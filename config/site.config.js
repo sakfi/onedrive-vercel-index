@@ -53,7 +53,7 @@ module.exports = {
   links: [   
     {
       name: 'Telegram',
-      link: 'https://donate.indexbd.xyz',
+      link: 'https://t.me/INDEXBDbot',
     },
   ],
 
