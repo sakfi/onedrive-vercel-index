@@ -33,26 +33,29 @@ const VideoPlayer: FC<{
   mpegts: any
 }> = ({ videoName, videoUrl, width, height, thumbnail, subtitle, isFlv, mpegts }) => {
   useEffect(() => {
-    // Really really hacky way to inject subtitles as file blobs into the video element
-    axios
-      .get(subtitle, { responseType: 'blob' })
-      .then(resp => {
-        const track = document.querySelector('track')
-        track?.setAttribute('src', URL.createObjectURL(resp.data))
-      })
-      .catch(() => {
-        console.log('Could not load subtitle.')
-      })
+    // Ensure document is defined (only for client-side)
+    if (typeof window !== 'undefined') {
+      // Really really hacky way to inject subtitles as file blobs into the video element
+      axios
+        .get(subtitle, { responseType: 'blob' })
+        .then(resp => {
+          const track = document.querySelector('track')
+          track?.setAttribute('src', URL.createObjectURL(resp.data))
+        })
+        .catch(() => {
+          console.log('Could not load subtitle.')
+        })
 
-    if (isFlv) {
-      const loadFlv = () => {
-        // Really hacky way to get the exposed video element from Plyr
-        const video = document.getElementById('plyr')
-        const flv = mpegts.createPlayer({ url: videoUrl, type: 'flv' })
-        flv.attachMediaElement(video)
-        flv.load()
+      if (isFlv) {
+        const loadFlv = () => {
+          // Really hacky way to get the exposed video element from Plyr
+          const video = document.getElementById('plyr')
+          const flv = mpegts.createPlayer({ url: videoUrl, type: 'flv' })
+          flv.attachMediaElement(video)
+          flv.load()
+        }
+        loadFlv()
       }
-      loadFlv()
     }
   }, [videoUrl, isFlv, mpegts, subtitle])
 
