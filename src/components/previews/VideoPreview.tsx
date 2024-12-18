@@ -1,6 +1,5 @@
 import type { OdFileObject } from '../../types'
 import dynamic from 'next/dynamic'
-const Plyr = dynamic(() => import('plyr-react'), { ssr: false })
 import { FC, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
